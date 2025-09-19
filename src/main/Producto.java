@@ -4,13 +4,14 @@ public class Producto {
 	private float precio;
 	private String nombre;
 	private String desc;
+	private boolean disponible;
 	
-	
-	public Producto(float precio, String nombre, String desc) {
+	public Producto(float precio, String nombre, String desc, boolean disponible) {
 		super();
 		this.precio = precio;
 		this.nombre = nombre;
 		this.desc = desc;
+		this.disponible = disponible;
 	}
 	public float getPrecio() {
 		return precio;
@@ -30,7 +31,13 @@ public class Producto {
 	public void setDesc(String desc) {
 		this.desc = desc;
 	}
+	public boolean isDisponible() {
+		return disponible;
+	}
+	public void setDisponible(boolean disponible) {
+		this.disponible = disponible;
+	}
 	public String toString() {
-		return "\n[Nombre]: "+this.nombre+"; "+"[Precio]: "+this.precio+"; "+"[Descripcion]: "+this.desc+"\n";	
+		return "\n[Nombre]: "+this.nombre+"; "+"[Precio]: "+this.precio+"; "+"[Descripcion]: "+this.desc+"; "+"[Disponible]: "+this.disponible+ "\n";	
 	}
 }

@@ -1,20 +1,10 @@
-Mi iteración: 0: hola
-Mi iteración: 1: mundo
-Mi iteración: 2: alumno
-Mi iteración: 3: profesor
-Mi iteración: 4: director
-Mi iteración: 0: a
-Mi iteración: 1: b
-Mi iteración: 2: c
-Mi iteración: 3: d
-Mi iteración: 4: e
 
-[Nombre]: Tomate; [Precio]: 0.32; [Descripcion]: Toma
+[Nombre]: manzana; [Precio]: 9.0; [Descripcion]: rojo; [Disponible]: true
 
-[Nombre]: Leche; [Precio]: 0.8; [Descripcion]: Lacteo
+[Nombre]: pera; [Precio]: 9.0; [Descripcion]:verde; [Disponible]: false
 
-[Nombre]: Galleta; [Precio]: 1.43; [Descripcion]: Maria
+[Nombre]: naranja; [Precio]: 9.0; [Descripcion]: naranja; [Disponible]: true
 
-[Nombre]: Ratón; [Precio]: 12.0; [Descripcion]: Gamer
+[Nombre]: limon; [Precio]: 9.0; [Descripcion]: amarillo; [Disponible]: false
 
-[Nombre]: Ordenador; [Precio]: 200.0; [Descripcion]: Workstation
+[Nombre]: uva; [Precio]: 9.0; [Descripcion]: lila; [Disponible]: true

@@ -37,8 +37,10 @@ public class Main {
 			float precio = sc.nextFloat();
 			System.out.print("Introduzca Descripción del producto: ");
 			String desc = sc.next();
+			System.out.print("Introduzca la disponibilidad del producto: ");
+			boolean disponibilidad = sc.nextBoolean();
 			//Añado elementos al array
-			productos.add(new Producto(precio,nombreProducto,desc));
+			productos.add(new Producto(precio,nombreProducto,desc, disponibilidad));
 			//Escribo en el fichero la información de cada producto
 			pw.append(productos.get(i).toString());
 		}
@@ -61,10 +63,14 @@ public class Main {
 		
 		if(f.canRead()) {
 			leerFichero(f);
-		}else if(f.canWrite()) {
-			escribirFichero(f);
+			System.out.println("");
+			if(f.canWrite()) {
+				escribirFichero(f);
+			}else {
+				System.out.println("NO SE PUEDE ESCRIBIR EN EL ARCHIVO");
+			}
 		}else {
-			System.out.println("NO SE PUEDE ESCRIBIR EN EL ARCHIVO");
+			System.out.println("NO SE PUEDE LEER EN EL ARCHIVO");
 		}
 		
 		
